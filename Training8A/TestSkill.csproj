@@ -75,12 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API\APITests.cs" />
-    <Compile Include="Feaures\APITest.feature.cs">
+    <Compile Include="Features\APITest.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>APITest.feature</DependentUpon>
     </Compile>
-    <Compile Include="Feaures\Registrations.feature.cs">
+    <Compile Include="Features\Registrations.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Registrations.feature</DependentUpon>
@@ -94,11 +94,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Feaures\APITest.feature">
+    <None Include="Features\APITest.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>APITest.feature.cs</LastGenOutput>
     </None>
-    <None Include="Feaures\Registrations.feature">
+    <None Include="Features\Registrations.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Registrations.feature.cs</LastGenOutput>
     </None>

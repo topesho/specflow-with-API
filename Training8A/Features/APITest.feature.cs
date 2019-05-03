@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Training8A.Feaures
+namespace Training8A.Features
 {
     using TechTalk.SpecFlow;
     

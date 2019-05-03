@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Training8A.Utilities;
+using TestSkill.Utilities;
 
-namespace Training8A.PageObjects
+namespace TestSkill.PageObjects
 {
     class RegistrationPage
     {

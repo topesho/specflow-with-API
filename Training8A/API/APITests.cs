@@ -3,9 +3,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
 using RestSharp;
 using Assert = NUnit.Framework.Assert;
-using FluentAssertions;
+//using FluentAssertions;
 
-namespace Training8A.API
+namespace TestSkill.API
 {
     [TestClass]
     public class APITests

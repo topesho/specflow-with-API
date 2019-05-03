@@ -2,19 +2,19 @@
 using OpenQA.Selenium;
 using System;
 using TechTalk.SpecFlow;
-using Training8A.PageObjects;
-using Training8A.Utilities;
+using TestSkill.PageObjects;
+using TestSkill.Utilities;
 using TechTalk.SpecFlow.Assist;
 
-namespace Training8A.StepDefinitions
+namespace TestSkill.StepDefinitions
 {
     [Binding]
-    public class RegistrationsSteps
+    public class RegistrationsStepsDef
     {
         RegistrationPage registration;
 
 
-        public RegistrationsSteps()
+        public RegistrationsStepsDef()
         {
             registration = new RegistrationPage();
         }

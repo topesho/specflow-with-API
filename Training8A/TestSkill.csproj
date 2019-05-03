@@ -86,8 +86,9 @@
       <DependentUpon>Registrations.feature</DependentUpon>
     </Compile>
     <Compile Include="PageObjects\RegistrationPage.cs" />
+    <Compile Include="StepDefinitions\APITestStepDef.cs" />
     <Compile Include="StepDefinitions\RegistrationInput.cs" />
-    <Compile Include="StepDefinitions\RegistrationsSteps.cs" />
+    <Compile Include="StepDefinitions\RegistrationsStepDef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Hooks.cs" />
   </ItemGroup>

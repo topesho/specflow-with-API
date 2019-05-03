@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using TechTalk.SpecFlow;
 
-namespace Training8A.Utilities
+namespace TestSkill.Utilities
 {
     [Binding]
     public class Hooks

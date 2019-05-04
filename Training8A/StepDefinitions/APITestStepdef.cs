@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using RestSharp;
 using System;
+using System.Linq;
 using TechTalk.SpecFlow;
 using Assert = NUnit.Framework.Assert;
 
@@ -18,7 +19,8 @@ namespace TestSkill.StepDefinitions
            [Given(@"I have entered my endpoint")]
         public void GivenIHaveEnteredMyEndpoint()
         {
-            client = new RestClient("https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22");
+            string url =  ("https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22");
+            client = new RestClient(url);
 
         }
 
@@ -52,6 +54,8 @@ namespace TestSkill.StepDefinitions
             string content = response.Content.ToString();
 
             Assert.AreEqual(200, statusCode, "statusCode is  200");
+            Assert.That(response.StatusCode.ToString().Equals("OK"), Is.True);
+
             Assert.AreEqual("OK", status);
             if (!content.Contains("London")) Assert.IsTrue(content.Contains("London"));
 
@@ -85,6 +89,7 @@ namespace TestSkill.StepDefinitions
         public void ThenTheResponseShouldBeUnsuccessful()
         {
             Assert.That(response.StatusCode.ToString().Contains("NotFound"), Is.True);
+            Assert.That(response.Headers.Count().Equals(7), Is.True);
             Assert.AreEqual(response.Content, "");
             
         }

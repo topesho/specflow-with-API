@@ -132,4 +132,13 @@ namespace TestSkill.StepDefinitions
 
 
         //}
-    } }
+
+        [When(@"I can see the mobileno textbox")]
+        public void WhenICanSeeTheMobilenoTextbox()
+        {
+            Assert.That(registration.IsMobileTextBoxDisplayed(), Is.True);
+
+        }
+
+    }
+}

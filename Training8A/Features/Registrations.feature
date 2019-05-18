@@ -30,6 +30,7 @@ Scenario: Invalid Registration
 	And I enter firtname "<Fistname>"
 	And I enter last name "Lastname"
 	And I enter email "email"
+	And I can see the mobileno textbox
 	And I enter mobile number "12345678910"
 	And I enter password "Password"
 	And I confirm password "ConfirmPassword"

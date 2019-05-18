@@ -160,14 +160,16 @@ this.ScenarioInitialize(scenarioInfo);
 #line 32
  testRunner.And("I enter email \"email\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 33
- testRunner.And("I enter mobile number \"12345678910\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I can see the mobileno textbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 34
- testRunner.And("I enter password \"Password\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter mobile number \"12345678910\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 35
- testRunner.And("I confirm password \"ConfirmPassword\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter password \"Password\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 36
- testRunner.And("the click on signUp", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I confirm password \"ConfirmPassword\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 37
+ testRunner.And("the click on signUp", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 38
  testRunner.Then("I should get a message displayed \"Please select Google Captcha\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

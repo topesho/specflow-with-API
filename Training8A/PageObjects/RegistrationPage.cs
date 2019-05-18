@@ -96,6 +96,10 @@ namespace TestSkill.PageObjects
 
         }
         
+        public Boolean IsMobileTextBoxDisplayed()
+        {
+            return IsElementDisplayed(MobileNo);
+        }
        
     }
 }

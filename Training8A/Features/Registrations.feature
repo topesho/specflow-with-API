@@ -35,6 +35,7 @@ Scenario: Invalid Registration
 	And I confirm password "ConfirmPassword"
 	And the click on signUp
 	Then I should get a message displayed "Please select Google Captcha"
+	#When I provide answer for all the fields on the page and click continue 1 time
 
 	Examples: 
 	| Firstname | Lastname | Password | ConfirmPassword | email             | Mobile no    |

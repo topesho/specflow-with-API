@@ -1,16 +1,21 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TestSkill.Utilities;
+using Training8A.PageObjects;
 
 namespace TestSkill.PageObjects
 {
-    class RegistrationPage
+    class RegistrationPage : BasePage
     {
+        //private int explicitWaitTime = 20;
+        
+
         public RegistrationPage()
         {
             PageFactory.InitElements(Hooks.Driver, this);
@@ -40,7 +45,7 @@ namespace TestSkill.PageObjects
 
         [FindsBy(How = How.Id, Using = "google_cpatcha_error")]
         public IWebElement CaptchaMsg { get; set; }
-
+       
         public void ClickSignUP()
         {
 
@@ -90,6 +95,7 @@ namespace TestSkill.PageObjects
             return CaptchaMsg.Text;
 
         }
-
+        
+       
     }
 }

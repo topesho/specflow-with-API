@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using System;
 using TechTalk.SpecFlow;
 using TestSkill.PageObjects;
 using TestSkill.Utilities;
@@ -24,6 +23,8 @@ namespace TestSkill.StepDefinitions
         {
             Hooks.Driver.Navigate().GoToUrl("http://www.giftrete.com");
             Hooks.Driver.Manage().Window.Maximize();
+            registration.WaitForPageLoad();
+         
         }
 
         [When(@"Click on register link")]
@@ -113,8 +114,22 @@ namespace TestSkill.StepDefinitions
             // Console.WriteLine(Input.Mobileno);
             //Console.WriteLine(Input.Email);
             //Console.WriteLine(Input.Password);
-
-
         }
-    }
-}
+
+        //[when(@"i provide answer for all the fields on the page and click continue (.*) time")]
+        //public void wheniprovideanswerforallthefieldsonthepageandclickcontinuetime(int numberoftimes)
+        //{
+
+        //    int i = 0;
+        //    while (i < numberoftimes)
+        //    {
+        //        this.registration.findallformfieldandentervalue("0");
+        //        this.applicationformpage.clicksaveandcontinue();
+        //        this.applicationformpage.waitforpagetobeloaded();
+        //        i++;
+        //    }
+
+
+
+        //}
+    } }

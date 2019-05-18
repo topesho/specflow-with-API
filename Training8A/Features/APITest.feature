@@ -13,3 +13,4 @@ Scenario: Invalid API endpoint with unsuccessful response
 	When I execute the response with invalid endpoint
 	Then the response should be unsuccessful
 
+

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
 using RestSharp;
@@ -30,6 +31,7 @@ namespace TestSkill.API
             string isSuccessful = response.IsSuccessful.ToString();
             int statusCode = (int)response.StatusCode;
             string content = response.Content.ToString();
+            //string header = response.Headers.ToString();
 
             Assert.AreEqual(200, statusCode, "statusCode is  200");
             Assert.AreEqual("OK", status);
@@ -37,7 +39,8 @@ namespace TestSkill.API
 
             Assert.That(isSuccessful.Contains("true"), Is.False);
 
-            Assert.That(content.Contains("London"), Is.True);         
+            Assert.That(content.Contains("London"), Is.True);
+            Assert.That(response.ContentType.ToString().Contains("application/json"));
         }
 
 

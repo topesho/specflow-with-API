@@ -95,6 +95,8 @@ namespace TestSkill.StepDefinitions
             //Assert.AreNotEqual(errormessage, error);
 
             Assert.That(registration.GetCapthaMsg, Does.Contain(errormessage));
+           
+            
         }
 
         [When(@"I enter the floowing details")]
@@ -139,6 +141,14 @@ namespace TestSkill.StepDefinitions
             Assert.That(registration.IsMobileTextBoxDisplayed(), Is.True);
 
         }
+
+        [Then(@"I will not see the logged in message")]
+        public void ThenIWillNotSeeTheLoggedInMessage()
+        {
+            Assert.That(registration.IsMobileTextBoxDisplayed(), Is.True);
+
+        }
+
 
     }
 }

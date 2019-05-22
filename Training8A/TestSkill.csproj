@@ -88,6 +88,7 @@
     <Compile Include="PageObjects\BasePage.cs" />
     <Compile Include="PageObjects\RegistrationPage.cs" />
     <Compile Include="StepDefinitions\APITestStepDef.cs" />
+    <Compile Include="StepDefinitions\BaseStepDefs.cs" />
     <Compile Include="StepDefinitions\RegistrationInput.cs" />
     <Compile Include="StepDefinitions\RegistrationsStepDef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

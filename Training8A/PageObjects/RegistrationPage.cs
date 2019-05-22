@@ -100,6 +100,10 @@ namespace TestSkill.PageObjects
         {
             return IsElementDisplayed(MobileNo);
         }
-       
+
+        public Boolean IsLoggingMessageNotPresent()
+        {
+            return IsElementNotPresent(By.Id("vvvv"));
+        }
     }
 }

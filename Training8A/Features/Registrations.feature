@@ -14,6 +14,7 @@ Scenario: Invalid Registration with parameters
 	And I confirm password "xxxxx"
 	And the click on signUp
 	Then I should get a message displayed "Please select Google Captcha"
+	And I will not see the logged in message
 
 Scenario: Invalid Registration
 	Given I navigate to the site

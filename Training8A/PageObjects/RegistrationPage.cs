@@ -14,8 +14,9 @@ namespace TestSkill.PageObjects
     class RegistrationPage : BasePage
     {
         //private int explicitWaitTime = 20;
-        
 
+
+        [Obsolete]
         public RegistrationPage()
         {
             PageFactory.InitElements(Hooks.Driver, this);

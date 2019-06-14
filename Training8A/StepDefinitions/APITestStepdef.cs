@@ -91,7 +91,9 @@ namespace TestSkill.StepDefinitions
             Assert.That(response.StatusCode.ToString().Contains("NotFound"), Is.True);
             Assert.That(response.Headers.Count().Equals(7), Is.True);
             Assert.AreEqual(response.Content, "");
-            
+            Assert.That(response.Cookies.Count.Equals("zero")); 
+            Assert.That(response.StatusCode.ToString().Equals("NotFound"));
+
         }
 
 
